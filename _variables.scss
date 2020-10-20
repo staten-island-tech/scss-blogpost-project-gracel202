@@ -1,8 +1,13 @@
-$colors: (
-    primary: #45a29e,
-    primary-light: #66fcf1,
-);
+$mainFont: "Josefin Sans", sans-serif;
 
-@function color($color-name) {
-    @return map-get($colors, $color-name);
-}
+$secondaryFont: 'Sofia', cursive;
+
+$primary-color: #A0EEF1;
+
+$secondary-color: #FEEFEE;
+
+$primary-box-color: #D7F9F4;
+
+$text-shadow: #333;
+
+$text-color: #fff;
