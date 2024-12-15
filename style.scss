@@ -1,0 +1,103 @@
+//Measurements  px = Monkey, rem AKA relative unit 1REM = 10px, vw = viewport width vh = viewport height
+@import "_variables.scss";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem === 10px; 
+    font-family: $mainFont;
+}
+
+.header {
+    font-size: 5rem; 
+    background-image: url("images/sunset2.jpg");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    color: $text-color;
+}
+
+.header-text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-primary-main {
+   display: block; 
+   font-size: 10rem;
+   letter-spacing: 1rem;
+   text-shadow: $text-shadow 3px 3px;
+   font-family: $secondaryFont;
+   text-transform: uppercase;
+}
+
+.header-primary-sub {
+    font-size: 4rem;
+    text-shadow: $text-shadow 3px 3px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    background-color: $secondary-color;
+    padding: 1rem;
+    margin: 0 2px;
+    justify-content: space-around;
+    display: flex; 
+}
+
+ .nav-item {
+    align-items: center;
+    display: inline;
+    font-size: 2rem;
+ }
+
+.box {
+    width: 30%;
+    justify-content: space-around; 
+    margin: 2px; 
+    padding: 5px; 
+    background-color: $primary-box-color;
+    border-radius: 10%;
+}
+
+.title {
+    font-family: $secondaryFont;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2px;
+}
+
+.text {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2px;
+    margin: 0 2px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $primary-color;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 55%;
+    margin: auto;
+    border-radius: 3%; 
+} 
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+ a:hover {
+    background-color: $text-color;
+} 
